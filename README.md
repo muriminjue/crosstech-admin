@@ -1,1 +1,2 @@
-# crosstechadmin_client
+# Crosstech Admin Panel
+Built in react
