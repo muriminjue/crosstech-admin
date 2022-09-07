@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 //
 import DashboardNavbar from './DashboardNavbar';
 import DashboardSidebar from './DashboardSidebar';
+import Scrollbar from '../../components/Scrollbar';
 
 // ----------------------------------------------------------------------
 
@@ -39,9 +40,11 @@ export default function DashboardLayout() {
     <RootStyle>
       <DashboardNavbar onOpenSidebar={() => setOpen(true)} />
       <DashboardSidebar isOpenSidebar={open} onCloseSidebar={() => setOpen(false)} />
+      <Scrollbar>
       <MainStyle>
         <Outlet />
       </MainStyle>
+      </Scrollbar>
     </RootStyle>
   );
 }
